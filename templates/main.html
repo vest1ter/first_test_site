@@ -45,7 +45,11 @@
 				<ul class="navbar-nav">
 					<li class="nav-item">
                       <!-- в href указываем id div block куда нам нужно сделать скролл -->
-						<a class="nav-link" href="#carouselExampleIndicators">Carousel</a>
+					  	{% if user_authenticated %}
+					  		<a href="/profile">Профиль</a>
+						{% else %}
+							<a href="/auth">Войти</a>
+						{% endif %}
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#cards">Cards</a>
