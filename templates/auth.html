@@ -15,9 +15,9 @@
 		<h3 class="card-title text-center mb-4">Вход в систему</h3>
 		<div class="card-body">
 			<div class="pole">
-				<form method="post">
+				<form method="post" action="/signin" id="loginformm">
 					<div class="mb-3">
-						<label for="username" class="form-label">Имя пользователя</label>
+						<label for="username" class="{{ input_class }}">Имя пользователя</label>
 						<input type="text" class="form-control" id="username" name="username"
 							aria-describedby="usernameHelp">
 						<div id="usernameHelp" class="form-text">Ваше имя пользователя останется конфиденциальным.</div>
@@ -25,10 +25,6 @@
 					<div class="mb-3">
 						<label for="password" class="form-label">Пароль</label>
 						<input type="password" class="form-control" id="password" name="password">
-					</div>
-					<div class="mb-3">
-						<label for="email" class="form-label">Почта</label>
-						<input type="text" class="form-control" id="email" name="email">
 					</div>
 					<div class="mb-3 form-check">
 						<input type="checkbox" class="form-check-input" id="rememberMe">
@@ -38,7 +34,7 @@
 				</form>
 			</div>
 			<div class="pole">
-				<form method="post" id="registr-form">
+				<form method="post" action="/signup" id="registrform">
 					<div class="mb-3">
 						<label for="reg_username" class="form-label">Имя пользователя</label>
 						<input type="text" class="form-control" id="reg_username" name="reg_username"

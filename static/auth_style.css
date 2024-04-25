@@ -1,5 +1,5 @@
 
-.card-body {
+.card-body{
 	display: flex;
     justify-content: space-around;
 	margin: 20px;
@@ -7,4 +7,11 @@
 .pole{
 	margin: 20px;
 }
-        
+
+.form-control-error{
+	background-color: red;
+}
+
+.form-control{
+	background-color: white;
+}
